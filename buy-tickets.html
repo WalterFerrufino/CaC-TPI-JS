@@ -80,39 +80,39 @@
             <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
               <form>
                 <div class="row">
-                  <div class="form-label col-12 col-md-6 p-1">
+                  <div class="form-label col-12 col-md-6">
                     <input type="text" class="col-12 p-2 card border" placeholder="Nombre" aria-label="First name">
                   </div>
-                  <div class="form-label col-12 col-md-6 p-1">
+                  <div class="form-label col-12 col-md-6">
                     <input type="text" class="col-12 p-2 card border" placeholder="Apellido" aria-label="First name">
                   </div>
-                  <div class="form-label col-12 mt-2 p-1">
+                  <div class="form-label col-12 mt-2">
                     <input type="text" class="col-12 p-2 card border" placeholder="Correo" aria-label="Email">
                   </div>
-                  <div class="col-12 col-md-6 p-1">
+                  <div class="col-12 col-md-6">
                     <p class="col-12 mt-2 mb-1">Cantidad</p>
                     <div class="form-label col-12 col-md-12">
-                      <input type="text" class="col-12 p-2 card border" placeholder="cantidad" aria-label="Quantity">
+                      <input id="InputQuantity" type="text" class="col-12 p-2 card border" placeholder="cantidad" aria-label="Quantity">
                     </div> 
                   </div>
-                  <div class="col-12 col-md-6 p-1">
+                  <div class="col-12 col-md-6">
                     <p class="col-12 mt-2 mb-1 ">Categoría</p>
-                    <select name="" id="" class="col-12 p-2 card border">
-                      <option value="">Estudiante</option>
-                      <option value="">Trainee</option>
-                      <option value="">Junior</option>
+                    <select name="" id="InputCategoria" class="col-12 p-2 card border">
+                      <option value="Estudiante">Estudiante</option>
+                      <option value="Trainee">Trainee</option>
+                      <option value="Junior">Junior</option>
                     </select>
                   </div>
                 </div>
                     <div class="alert alert-primary mt-4" role="alert">
-                        Total a pagar: $
+                        Total a pagar: $ <span id="ResultP"></span>
                     </div>
                 <div class="row">
-                  <div class="col p-1">
-                    <button type="button" id="btn-bsas" class="btn col-12 mt-3 mb-1 mx-0">Borrar</button>
+                  <div class="col">
+                    <button type="reset" id="btn-bsas" class="btn col-12 mt-3 mb-1 mx-0">Borrar</button>
                   </div>
-                  <div class="col p-1">
-                    <button type="button" id="btn-bsas" class="btn col-12 mt-3 mb-1 mx-0">Resumen</button>
+                  <div class="col">
+                    <button type="button" onclick="onClickButtonTotalAmount()" id="btn-bsas" class="btn col-12 mt-3 mb-1 mx-0">Resumen</button>
                   </div>
                 </div>
               </form>
@@ -150,5 +150,6 @@
     <!-- Footer ends -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
