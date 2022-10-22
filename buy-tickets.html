@@ -12,7 +12,7 @@
     <!-- Header -->
     <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container"> 
-              <a class="navbar-brand" href="#"><img src="./IMG/codoacodo.png" alt="Codo a Codo logo">Conf Bs As</a>
+              <a class="navbar-brand" href="./index.html"><img src="./IMG/codoacodo.png" alt="Codo a Codo logo">Conf Bs As</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -67,7 +67,7 @@
     </div>
     <!-- Descounts ends -->
 
-    <!-- Venta -->
+    <!-- Sells -->
     <section class="py-3">
         <div class="container">
           <div class="row">
@@ -92,7 +92,7 @@
                   <div class="col-12 col-md-6">
                     <p class="col-12 mt-2 mb-1">Cantidad</p>
                     <div class="form-label col-12 col-md-12">
-                      <input id="InputQuantity" type="text" class="col-12 p-2 card border" placeholder="cantidad" aria-label="Quantity">
+                      <input id="InputQuantity" type="number" class="col-12 p-2 card border" placeholder="cantidad" aria-label="Quantity">
                     </div> 
                   </div>
                   <div class="col-12 col-md-6">
@@ -104,12 +104,12 @@
                     </select>
                   </div>
                 </div>
-                    <div class="alert alert-primary mt-4" role="alert">
-                        Total a pagar: $ <span id="ResultP"></span>
+                    <div id="resultado" class="alert alert-primary mt-4" role="alert">
+                        <span>Total a pagar: $</span><span id="Total"></span>
                     </div>
                 <div class="row">
                   <div class="col">
-                    <button type="reset" id="btn-bsas" class="btn col-12 mt-3 mb-1 mx-0">Borrar</button>
+                    <button type="reset" onclick="document.getElementById('Total').innerHTML=''" id="btn-bsas" class="btn col-12 mt-3 mb-1 mx-0">Borrar</button>
                   </div>
                   <div class="col">
                     <button type="button" onclick="onClickButtonTotalAmount()" id="btn-bsas" class="btn col-12 mt-3 mb-1 mx-0">Resumen</button>
@@ -120,7 +120,7 @@
           </div>
         </div>
     </section>
-    <!-- Venta ends -->
+    <!-- Sells ends -->
   
     <!-- Footer -->
     <footer id="footer" class="py-4">
