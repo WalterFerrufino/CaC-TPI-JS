@@ -1,25 +1,3 @@
-// const valorTicket = 200;
-// const Estudiante = 0.2;
-// const Trainee = 0.5;
-// const Junior = 0.85;
-
-// var cantidadDeTickets = 0;
-
-// function totalAPagar(cantidadDeTickets, valorTicket, categoria) {
-//     const cantidadDeTickets = document.getElementById("cantidad");
-//     const categoria = document.getElementById("categoria");
-
-//     return cantidadDeTickets * valorTicket * categoria;
-
-
-// }
-
-
-// const totalAPagar = document.getElementById("totalAPagar");
-// totalAPagar.innerText = totalAPagar;
-
-
-
 function calcularPrecioConDescuento(cantidad, descuento) {
     const porcentajePrecioConDescuento = 100 - descuento;
     const precioConDescuento = 200*((cantidad * porcentajePrecioConDescuento) / 100);
