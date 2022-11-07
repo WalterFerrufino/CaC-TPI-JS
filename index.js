@@ -28,6 +28,6 @@ function onClickButtonTotalAmount() {
     const precioConDescuento = calcularPrecioConDescuento(quantityValue, descuento);
 
     const total = document.getElementById("Total");
-    total.innerText = precioConDescuento;
+    total.innerText = precioConDescuento.toFixed(0);
 }
 
